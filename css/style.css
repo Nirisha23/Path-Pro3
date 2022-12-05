@@ -1,0 +1,1237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}   :root{
+        --black: #2f3158;
+        --primary: #3554F2;
+        --secondary: #11DEAD;
+    }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:8px 5%;
+    position:sticky;
+    top:0;
+    background: rgba(255, 255, 255, 0.441);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+}
+.nav-logo{
+    width:10%;
+    display: flex;
+    align-items: center;
+}
+.nav-logo img{
+    width:50%;
+}
+.logo-image{
+    width:100%;
+}
+.nav-logo span{
+    font-size: 40px;
+    padding: 0 16px;
+    font-weight: 600;
+}
+.nav-links ul li{
+    display: inline-block;
+    padding:8px 16px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color:#000;
+}
+.nav-links ul li a:hover{
+    color:var(--primary);
+}
+.bar{
+    display: none;
+}
+
+/* Hero Section */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px 5%;
+    gap:12px;
+}
+.hero-con{
+    width:50%;
+}
+.hero-con h1{
+    font-size: 62px;
+    line-height: 67px;
+    font-weight: normal;
+    color: var(--black);
+}
+.hero-con h1 span{
+    font-weight: 700;
+}
+.hero-con p{
+    padding: 16px 0;
+    line-height: 1.8;
+    color: var(--black);
+    font-weight: normal;
+}
+.hero-btn{
+    padding:16px 40px;
+    border-radius: 25px;
+    border: none;
+    margin:16px 0;
+    background: linear-gradient(90deg, rgba(53,114,242,0.9364788151588761) 25%, rgba(86,104,254,0.832837358576243) 100%);
+    color:white;
+}
+.hero-btn:hover{
+    background-color: var(--primary);
+    cursor: pointer;
+    box-shadow: rgba(103, 123, 209, 0.5) 0px 8px 24px;
+}
+.video{
+    width: 30%;
+    height: 600px;
+    border-radius: 450px;
+    overflow: hidden;
+}
+.hero-video{
+    width:100%;
+   height: 100%;
+   object-fit: cover;  
+}
+.path{
+    padding:40px 5%;
+    display: flex;
+   justify-content: center;
+}
+.path-con{
+background-color: #EFF7EF;
+display: flex;
+align-items: center;
+border-radius: 20px;
+padding:8px 36px;
+width:700px;
+min-height:120px;
+
+}
+.path-description{
+    margin: 0 16px;
+    
+}
+.path-description h4{
+    padding:16px 0 8px 0;
+    font-size: 18px;
+    color: var(--black);
+}
+.path-description p{
+    font-size: 15px;
+    color: var(--black);
+    padding-bottom: 8px;
+    font-weight: 400;
+}
+.company{
+    padding:40px 5%;
+}
+.company-desc-resp{
+    display: none;
+}
+.company-images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.company-images img{
+    width:10%;
+}
+.company-one{
+    width: 100%;
+}
+/* Card Section */
+.card{
+    padding:40px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.card-one{
+    width:22%;
+    text-align: center;
+}
+.card-one h3{
+    font-weight: 550;
+    color:var(--black);
+}
+.card-one p{
+    font-weight: 400;
+    color:var(--black);
+    padding:8px 0;
+    font-size: 15px;
+}
+.card-one img{
+    width:80%;
+}
+/* crypto exchange */
+.crypto, .crypto-card-two, .crypto-three{
+    padding:40px 5%;
+}
+.crypto h3{
+    margin-bottom: 30px;
+    font-size: 65px;
+    line-height: 105%;
+    text-align: center;
+    color: var(--black);
+}
+.crypto-desc{
+    background: linear-gradient(45deg, rgba(39,87,241,1) 0%, rgba(17,222,173,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 80px;   
+}
+.crypto-left{
+        width:50%;
+        margin-left: 90px;
+        padding-top: 7%;
+        /* padding-right: 20px;
+        padding-bottom: 24px; */
+        color:#fff;
+}
+.crypto-left h5{
+    padding:8px 0;
+    font-size: 16px;
+}
+.crypto-left h2{
+    font-size:42px;
+    padding: 8px 0 16px 0;
+}
+.crypto-btn{
+    padding:16px 40px;
+    border-radius: 25px;
+    border: none;
+    margin:16px 0 40px 0;
+    background-color: #fff;
+}
+.crypto-btn:hover{
+    cursor: pointer;
+    background-color: #ececec;
+}
+.risk{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding-bottom: 16px;
+}
+.risk img{
+  width:30px;
+  object-fit: cover;
+}
+.crypto-image{
+    width:100%;
+}
+.risk p{
+    margin-left: 24px;
+}
+.crypto-right{
+    width:50%;
+    
+}
+.crypto-right img{
+    width:100%;
+    display: block;
+   
+}
+/* Crypto Second Card */
+.crypto-two-desc{
+    background-color: #F5F6FA;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 80px;   
+}
+.crypto-card-two-left{
+    width: 50%;
+}
+.crypto-card-two-left img{
+    width:100%;
+    display: block;
+}
+.crypto-card-two-right{
+    width:50%;
+    margin-right: 90px;
+    padding-top: 7%;
+    color:#fff;
+}
+.crypto-card-two-right h5{
+    padding:8px 0;
+    color:var(--primary);
+}
+.crypto-card-two-right h2{
+    font-size:36px;
+    padding: 8px 0 16px 0;
+    color:var(--black);
+}
+.crypto-card-two-btn{
+    padding:16px 40px;
+    border-radius: 25px;
+    border: none;
+    margin:16px 0 40px 0;
+    background: linear-gradient(90deg, rgba(53,114,242,0.9364788151588761) 25%, rgba(86,104,254,0.832837358576243) 100%);
+    color:#fff;
+}
+.crypto-card-two-btn:hover{
+    background-color: var(--primary);
+    cursor: pointer;
+    box-shadow: rgba(103, 123, 209, 0.5) 0px 8px 24px;
+}
+.crypto-card-two-right .risk{
+    color:var(--black);
+}
+/* Crypto Third Card */
+.crypto-three-desc{
+    background-color:#F5F6FA;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 80px; 
+   
+}
+.crypto-three-left{
+        width:50%;
+        margin-left: 90px;
+        padding-top: 7%;
+        /* padding-right: 20px;
+        padding-bottom: 24px; */
+        color:var(--black);  
+}
+.crypto-three-left h5{
+    padding:8px 0;
+    color:var(--primary);
+}
+.crypto-three-left h2{
+    font-size:36px;
+    padding: 8px 0 16px 0;
+}
+.crypto-three-btn{
+    padding:16px 40px;
+    border-radius: 25px;
+    border: none;
+    margin:16px 0 40px 0;
+    background-color: #fff;
+    font-weight: 500;
+}
+.crypto-three-btn:hover{
+    cursor: pointer;
+    /* background-color: #ececec; */
+}
+.risk{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding-bottom: 16px;
+}
+.risk img{
+  width:30px;
+  object-fit: cover;
+}
+.crypto-image{
+    width:100%;
+}
+.risk p{
+    margin-left: 24px;
+}
+.crypto-right{
+    width:50%;
+    
+}
+.crypto-right img{
+    width:100%;
+    display: block;
+   
+}
+/* Path Crypto exchange */
+
+.features{
+    padding:40px 5%;
+}
+.features h2{
+    margin-bottom: 30px;
+    font-size: 65px;
+    line-height: 72px;
+    color: var(--black);
+  
+}
+.features p{
+    font-size:20px;
+}
+.features-desc{
+    text-align: center;
+}
+.feature-box{
+    background-color: #F5F6FA;
+    border-radius: 25px;
+    margin-top:40px;
+    padding:24px;
+}
+.column-one, .column, .column-last{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.column-one{
+    padding: 8px 0;
+    border-bottom: 1.5px solid #000 ;
+}
+.features-text{
+    font-weight: 700;
+    width: 60%;
+    text-align: left;
+}
+.box-logo{
+    width: 20%;
+    display: flex;
+   justify-items: center;
+   align-items: center;
+
+}
+.box-logo img{
+    width: 20%;
+    padding-right: 8px;
+}
+.crypto-text{
+    width: 20%;
+    font-weight: 700;
+    justify-items: center;
+    align-items: center;
+}
+.column{
+    padding: 16px 0;
+    border-bottom: 1px solid #afafaf ;
+}
+.column-last{
+    padding: 16px 0;
+}
+
+.desc{
+    width: 60%;
+}
+.column img, .column-last img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin: 0 11%;
+}
+
+
+/* Portfolio */
+.port{
+    padding: 40px 5%;
+    text-align: center;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #afafaf;
+}
+.port h2{
+    margin-bottom: 30px;
+    font-size: 65px;
+    line-height: 105%;
+    text-align: center;
+    color: var(--black);
+}
+.port p{
+    padding: 16px 0;
+    color:#afafaf;
+}
+.port p span{
+    color:var(--primary);
+    padding-right: 8px;
+    cursor: pointer;
+}
+.port-btn{
+    padding:16px 40px;
+    border-radius: 25px;
+    border: none;
+    margin:16px 0;
+    background: linear-gradient(90deg, rgba(53,114,242,0.9364788151588761) 25%, rgba(86,104,254,0.832837358576243) 100%);
+    color:white;
+    transition: 0.5s;
+   
+}
+.port-btn:hover{
+    background-color: var(--primary);
+    cursor: pointer;
+    box-shadow: rgba(103, 123, 209, 0.5) 0px 8px 24px;
+    transform: scale(1.1);
+}
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:40px 5%;
+    border-bottom: 1px solid #afafaf;
+
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+.footer-logo h3{
+    font-size: 24px;
+    padding: 0 0 0 4px;
+}
+.footer-one{width:30%;}
+.footer-two{width:50%;}
+.footer-three{width:50%;}
+.footer-four{width:20%;}
+
+.footer-logo img{
+    width:8%;
+}
+.footer-one p, .footer-two p, .footer-three p, .footer-four p{
+    padding:8px 0;
+    text-align: left;
+    color:#afafaf;
+    font-size: 13px;
+}
+.footer-two p:hover, .footer-three p:hover, .footer-four p:hover{
+    cursor: pointer;
+    color: var(--primary);
+}
+.insta{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.insta i:hover{
+    cursor: pointer;
+    color:var(--primary);
+}
+.second-footer{
+    display: flex;
+    justify-content: space-between;
+    padding:40px 5%;
+    gap:24px;
+}
+.one p, .two p{
+    padding: 0;
+    color: #afafaf;
+    font-size: 13px;
+    text-align: left;
+}
+.two p span{
+    color:var(--primary);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-responsive{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;   
+}
+/*----------------------MAX 1200px------------------*/
+@media(max-width:1200px){
+    /* .hero{
+        gap:10px;
+    } */
+    .hero-con h1{
+        font-size: 52px;
+        line-height: 60px;
+    }
+    .hero-con p{
+        padding: 16px 16px 16px 0 ;
+    }
+    .video{
+        width: 30%;
+        height: 500px;
+        border-radius:490px;
+        overflow: hidden;
+    }
+    /* .video .hero-video{
+       width:30%;
+    } */
+    .crypto-left, .crypto-three-left{
+        width:50%;
+        margin-left: 50px;
+        padding-top: 4%;
+}
+    .crypto-left h5, .crypto-three-left h5{
+        padding:8px 0;
+        font-size: 16px;
+    }
+    .crypto-left h2, .crypto-three-left h2{
+        font-size:38px;
+        padding: 8px 0 16px 0;
+    }
+    .risk img{
+        width:24px;
+        object-fit: cover;
+      }
+      .crypto-image{
+          width:100%;
+      }
+      .risk p{
+          margin-left: 20px;
+      }
+      .crypto-card-two-right{
+        width:50%;
+        margin-left: 50px;
+        padding-top: 4%;
+    }
+    }
+
+/*----------------------MAX 992------------------*/
+@media(max-width:992px){
+    .hero-con h1{
+        font-size: 48px;
+        line-height: 55px;
+    }
+    .hero-con h1 span{
+        font-weight: 700;
+    }
+    .hero-con p{
+        padding: 20px 0;
+    }
+    .crypto-desc, .crypto-three-desc, .crypto-two-desc{
+        align-items: flex-end;
+        display: flex;
+        justify-content: space-between;
+    }
+    .crypto-left, .crypto-three-left{
+        width:50%;
+        margin-left: 40px;
+        padding-top: 4%;
+        padding-bottom: 20px;
+    }
+    .crypto-card-two-right{
+        width:50%;
+        margin-right: 50px;
+        padding-top: 4%;
+        padding-bottom: 20px;
+    }
+    .crypto-right{
+        width:50%;   
+    }
+    .crypto-right img{
+        width:100%;
+        display: block;
+    }
+    .crypto-card-two-right{
+        margin-left: 40px;
+        padding-top: 4%;
+    }
+    .crypto-right{
+        width:50%;    
+    }
+    .crypto-right img{
+        width:100%;
+        display: block;
+       
+    }
+
+}
+
+/*----------------------MAX 786------------------*/
+@media(max-width:786px){
+    .bar{
+        display: block;
+        top:0;
+        padding:8px 5%;
+    }
+    .nav-links{
+        position: absolute;
+        top:52px;
+        left:0;
+        right:0;
+        justify-content: center;
+        justify-items: center;
+        display: grid;
+        height: 0;
+        transition: .5s;
+        background-color: #fff;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    } 
+    .nav-links ul li{
+            display: grid;
+            text-align: center;
+            padding:16px 0;    
+    }
+    .nav-links.active{
+        height: 200px; 
+    }
+    .nav-logo{
+        width:15%;
+        display: flex;
+        align-items: center;
+    }
+    .nav-logo img{
+        width:50%;
+    }
+    .logo-image{
+        width:100%;
+    }
+    .nav-logo span{
+        font-size: 35px;
+        padding: 0 8px;
+        font-weight: 600;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        padding:40px 5%;
+    }
+    .hero-con{
+        width:100%;
+        text-align: center;
+    }
+    .hero-con h1{
+        font-size: 52px;
+    }
+    .hero-btn{
+        margin-bottom: 32px;
+    }
+    .video{
+        width: 50%;
+        height: 500px;
+        border-radius: 450px;
+    }
+    .hero-video{
+        width:100%;
+       height: 100%;
+       object-fit: cover; 
+    }
+    .company-desc-resp{
+        display: block;
+        text-align: center;
+        padding-bottom: 12px;
+        font-weight: 600;
+    }
+    .com-desc{
+        display: none;
+    }
+    .company-images{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        width:100%;    
+    }
+    .company-images img{
+        width:20%;
+    }
+    .company-one{
+        width: 100%;
+    }
+    .card{
+        padding:40px 5%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .card-one{
+        width:40%;
+        text-align: center;
+    }
+    .card-one img{
+        width:100%;
+    } 
+    
+.crypto h3{
+    margin-bottom: 30px;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--black);
+}
+.crypto-desc{
+    background: linear-gradient(45deg, rgba(39,87,241,1) 0%, rgba(17,222,173,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 40px;   
+}
+.crypto-left{
+        width:60%;
+        margin-left: 30px;
+        padding-top: 4%;
+        color:#fff;
+}
+.crypto-left h5{
+    padding:8px 0;
+}
+.crypto-left h2{
+    font-size:24px;
+    padding: 8px 0 16px 0;
+    line-height: 28px;
+}
+.risk{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding-bottom: 16px;
+}
+.risk img{
+  width:20px;
+  object-fit: cover;
+}
+.risk p{
+    font-size: 14px;
+    margin-left: 12px;
+}
+.crypto-image{
+    width:100%;
+}    
+.crypto-btn{
+    padding:12px 40px;
+    border-radius: 25px;
+    border: none;
+    margin:16px 0;
+    background-color: #fff;
+}
+.crypto-btn:hover{
+    cursor: pointer;
+    background-color: #ececec;
+}
+.crypto-right{
+width:40%;
+}
+.crypto-right img{
+    width:100%;
+    display: block;
+}
+/* Crypto Second Card */
+.crypto-two-desc{
+    background-color: #F5F6FA;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 40px;   
+}
+.crypto-card-two-left{
+    width: 40%;
+}
+.crypto-card-two-left img{
+    width:100%;
+    display: block;
+}
+.crypto-card-two-right{
+    width:60%;
+    margin-right:0;
+    color:#fff;
+}
+.crypto-card-two-right h5{
+    padding:8px 0;
+    color:var(--primary);
+}
+.crypto-card-two-right h2{
+    font-size:24px;
+    padding: 8px 0 16px 0;
+    color:var(--black);
+}
+.crypto-card-two-btn{
+    padding:12px 40px;
+    margin:16px 0;
+}
+.crypto-card-two-right .risk{
+    color:var(--black);
+}
+/* Crypto Card Three */
+.crypto-three-desc{
+    background-color:#F5F6FA;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 40px;
+}
+.crypto-three-left{
+    width:60%;
+    margin-left: 30px;
+    padding-top: 4%;
+}
+.crypto-three-left h2{
+    font-size:24px;
+    padding: 8px 0;
+}
+.crypto-three-btn{
+    padding:12px 40px;
+    margin:16px 0;
+}
+.features h2{
+    font-size: 3rem;
+    line-height: 50px;
+}
+.features p{
+    font-size:16px;
+}
+.column img, .column-last img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin: 0 9%;
+}
+.port h2{
+    margin-bottom: 30px;
+    font-size: 3rem;
+    line-height:60px;
+    text-align: center;
+    color: var(--black);
+}
+.port-btn{
+    padding:12px 40px;
+}
+
+footer{
+    display: flex;
+    flex-direction:column;
+    grid-template-columns: 1fr 1fr;
+    padding:40px 5%;
+    border-bottom: 1px solid #afafaf;
+
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+.footer-logo h3{
+    font-size: 20px;
+    padding: 0 0 0 4px;
+}
+.footer-one{width:100%;}
+.footer-two{width:100%;}
+.footer-three{width:100%;}
+.footer-four{width:50%;}
+
+.footer-logo img{
+    width:8%;
+}
+.footer-one p, .footer-two p, .footer-three p, .footer-four p{
+    padding:8px 0;
+    text-align: left;
+    color:#afafaf;
+    font-size: 13px;
+}
+.footer-two p:hover, .footer-three p:hover, .footer-four p:hover{
+    cursor: pointer;
+    color: var(--primary);
+}
+.footer-responsive{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin:24px 0;
+}
+.insta{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.insta i:hover{
+    cursor: pointer;
+    color:var(--primary);
+}
+
+.second-footer{
+    padding:40px 5%;
+    gap:16px;
+}
+.one p, .two p{
+    font-size: 11px;
+}
+
+    }
+
+/*----------------------MAX 586------------------*/
+@media (max-width:576px){
+    .bar{
+        display: block;
+        top:0;
+        padding:8px 5%;
+    }
+    .nav-links{
+        position: absolute;
+        top:52px;
+        left:0;
+        right:0;
+        justify-content: center;
+        justify-items: center;
+        display: grid;
+        height: 0;
+        transition: .5s;
+        background-color: #fff;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    } 
+    .nav-links ul li{
+            display: grid;
+            text-align: center;
+            padding:16px 0;    
+    }
+    .nav-links.active{
+        height: 190px; 
+    }
+    .nav-logo{
+        width:15%;
+        display: flex;
+        align-items: center;
+    }
+    .nav-logo img{
+        width:50%;
+    }
+    .logo-image{
+        width:100%;
+    }
+    .nav-logo span{
+        font-size: 32px;
+        padding: 0 8px;
+        font-weight: 600;
+    }
+    .hero{
+        display: flex;
+      flex-direction: column;
+        padding:40px 5%;
+    }
+    .hero-con{
+        width:100%;
+        text-align: center;
+    }
+    .hero-con h1{
+        font-size: 48px;
+    }
+    .hero-btn{
+        margin-bottom: 32px;
+    }
+    .video{
+        width: 70%;
+        height: 500px;
+        border-radius: 450px;
+    }
+    .hero-video{
+        width:100%;
+       height: 100%;
+       object-fit: cover; 
+
+    }
+    .path-con{
+    border-radius: 15px;
+    padding:8px;
+    }
+
+.company-desc-resp{
+    display: block;
+    text-align: center;
+    padding-bottom: 12px;
+    font-weight: 600;
+}
+.com-desc{
+    display: none;
+}
+.company-images{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width:100%;    
+}
+.company-images img{
+    width:35%;
+}
+.company-one{
+    width: 100%;
+}
+.card{
+    padding:40px 5%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.card-one{
+    width:40%;
+    text-align: center;
+}
+.card-one img{
+    width:100%;
+}
+.crypto h3{
+    font-size: 40px;
+}
+.crypto-desc, .crypto-three-desc{
+    display: grid;
+    border-radius: 40px;  
+}
+.crypto-left, .crypto-three-left{
+    padding-top: 16px;
+    margin-left:32px;
+    width: fit-content;
+}
+.crypto-left h2{
+    font-size:36px;
+    line-height: 40px;
+}
+.crypto-three-left h2{
+    font-size:36px;
+}
+.crypto-btn, .crypto-three-btn{
+    padding:12px 40px;
+    border-radius: 18px;
+    margin:16px 0;
+}
+.crypto-right{
+    width:100%;
+}
+.crypto-right img{
+    width:100%;
+    display: block;
+   
+}
+.risk img{
+  width:16px;
+  object-fit: cover;
+}
+.risk p{
+    margin-left: 12px;
+    font-size: 14px;
+}
+
+/* Crypto card two */
+/* .crypto-card-two{
+    flex-direction: column-reverse;
+} */
+.crypto-two-desc{
+    flex-direction: column-reverse;
+    display: flex;
+    border-radius: 40px;
+    padding-left:32px;  
+
+}
+.crypto-card-two-right{
+    padding-top: 16px;
+    width:100%;
+}
+.crypto-card-two-right h2{
+    font-size:36px;
+}
+.crypto-card-two-right h5{
+    padding-top:12px;
+}
+.crypto-card-two-right-btn{
+    padding:16px 40px;
+    border-radius: 18px;
+}
+.crypto-card-two-left{
+    width:100%;
+ 
+}
+.crypto-card-two-left img{
+    width:100%;
+    display: block; 
+}
+.features h2{
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 40px;
+}
+.features p{
+    font-size:16px;
+}
+.column-one{
+    padding: 8px 0;
+    border-bottom: 1.5px solid #000 ;
+}
+.column-one, .column, .column-last{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.features-text{
+    font-weight: 700;
+    width: 50%;
+    text-align: left;
+}
+/* .box-logo{
+    width: 20%;
+    display: flex;
+   justify-items: center;
+   align-items: center;
+
+} */
+.box-logo img{
+    width: 40%;
+    padding-right: 8px;
+}
+.desc{
+    width: 50%;
+}
+.column img, .column-last img{
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+    margin: 0 10%;
+}
+.crypto-text{
+    width: 20%;
+    font-size: 14px !important;
+    font-weight: 700;
+}
+.box-logo h3, .features-text{
+    font-size: 14px !important;
+}
+.port{
+    padding: 40px 5%;
+    text-align: center;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #afafaf;
+}
+.port h2{
+    font-size: 36px;
+    line-height: 40px;
+}
+footer{
+    display: flex;
+    flex-direction:column;
+    grid-template-columns: 1fr 1fr;
+    padding:40px 5%;
+    border-bottom: 1px solid #afafaf;
+
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+.footer-logo h3{
+    font-size: 20px;
+    padding: 0 0 0 4px;
+}
+.footer-one{width:100%;}
+.footer-two{width:100%;}
+.footer-three{width:100%;}
+.footer-four{width:50%;}
+
+.footer-logo img{
+    width:8%;
+}
+.footer-one p, .footer-two p, .footer-three p, .footer-four p{
+    padding:8px 0;
+    text-align: left;
+    color:#afafaf;
+    font-size: 11px;
+}
+.footer-two p:hover, .footer-three p:hover, .footer-four p:hover{
+    cursor: pointer;
+    color: var(--primary);
+}
+.footer-responsive{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin:24px 0;
+}
+.insta{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.insta i:hover{
+    cursor: pointer;
+    color:var(--primary);
+}
+
+.second-footer{
+    padding:40px 5%;
+    gap:16px;
+}
+.one p, .two p{
+    font-size: 11px;
+}
+}
